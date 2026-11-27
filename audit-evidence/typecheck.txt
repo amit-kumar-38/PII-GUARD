@@ -1,0 +1,6 @@
+﻿
+> pii-guard@1.0.0 typecheck
+> tsc -b --noEmit
+
+
+ExitCode: 0

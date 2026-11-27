@@ -1,0 +1,78 @@
+{
+  "cspHeader": "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none';",
+  "initialRequests": [
+    "http://127.0.0.1:4174/",
+    "http://127.0.0.1:4174/assets/index-zwJy1H2p.js",
+    "http://127.0.0.1:4174/assets/index-C_yhm5jk.css",
+    "http://127.0.0.1:4174/favicon.ico"
+  ],
+  "postLoadRequests": [],
+  "consoleErrors": [],
+  "exceptions": [],
+  "storageCounts": {
+    "localStorage": 0,
+    "sessionStorage": 0,
+    "cookies": ""
+  },
+  "viewports": {
+    "desktop-1440": {
+      "scrollWidth": 1425,
+      "innerWidth": 1440,
+      "noOverflow": true
+    },
+    "desktop-1280": {
+      "scrollWidth": 1265,
+      "innerWidth": 1280,
+      "noOverflow": true
+    },
+    "tablet-768": {
+      "scrollWidth": 753,
+      "innerWidth": 768,
+      "noOverflow": true
+    },
+    "mobile-390": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "noOverflow": true
+    },
+    "mobile-360": {
+      "scrollWidth": 360,
+      "innerWidth": 360,
+      "noOverflow": true
+    }
+  },
+  "cockpitChecks": {
+    "bankingCount": "6",
+    "detectOnlyShield": "AEGIS CORE · PII DETECTED (UNMASKED)",
+    "protectedShield": "AEGIS CORE · PROTECTED",
+    "balancedMasksCard": true,
+    "inspectorAfterNext": "2 / 6",
+    "csvProfilerCols": 3
+  },
+  "modes": {
+    "pseudoConsistentAfterSwitch": true,
+    "fullHasRedacted": true,
+    "partialHasMaskedEmail": true
+  },
+  "scrollSync": {
+    "leftTop": 120,
+    "rightTop": 120,
+    "synced": true
+  },
+  "canaryCount": "4",
+  "txtDownloadMatch": true,
+  "csvHeaderSanitized": true,
+  "csvNoHeaderRows": 2,
+  "csvDownloadMatch": true,
+  "dndPanCounter": "Indian PAN11 unique",
+  "errorStateText": "Unsupported file type. Please upload a valid .txt or .csv file.",
+  "auditExportLeaksPii": false,
+  "logAfterClear": 1,
+  "afterResetTotal": "0",
+  "axeResults": {
+    "passes": 48,
+    "incompleteCount": 0,
+    "incomplete": [],
+    "violations": []
+  }
+}

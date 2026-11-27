@@ -1,0 +1,84 @@
+﻿
+[1m[46m RUN [49m[22m [36mv3.2.7 [39m[90mC:/Users/Amit kumar/OneDrive/Desktop/H2S Prompt Wars[39m
+      [2mCoverage enabled with [22m[33mv8[39m
+
+ [32m✓[39m tests/detection.test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32m✓[39m tests/redaction.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m tests/edgeCases.test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m tests/csv.test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m tests/security.test.tsx [2m([22m[2m2 tests[22m[2m)[22m[33m 590[2mms[22m[39m
+   [33m[2m✓[22m[39m Security and privacy guarantees[2m > [22mrenders HTML/script payloads harmlessly as text nodes without executing scripts [33m 377[2mms[22m[39m
+ [32m✓[39m tests/cockpit.test.tsx [2m([22m[2m3 tests[22m[2m)[22m[33m 1219[2mms[22m[39m
+   [33m[2m✓[22m[39m Privacy Cockpit engine & UI features[2m > [22msupports Detection-Only mode, Privacy Profiles, Category Filters, Inspector Navigation, and per-finding override in UI [33m 1211[2mms[22m[39m
+ [32m✓[39m tests/app.integration.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[33m 1362[2mms[22m[39m
+   [33m[2m✓[22m[39m PII GUARD UI integration workflow[2m > [22mloads synthetic sample, updates counters and comparison, switches modes, downloads, and resets [33m 655[2mms[22m[39m
+   [33m[2m✓[22m[39m PII GUARD UI integration workflow[2m > [22mloads sample CSV, toggles raw CSV preview, and exports safe audit summary without PII [33m 350[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m7 passed[39m[22m[90m (7)[39m
+[2m      Tests [22m [1m[32m32 passed[39m[22m[90m (32)[39m
+[2m   Start at [22m 13:44:52
+[2m   Duration [22m 5.29s[2m (transform 341ms, setup 1.97s, collect 3.60s, tests 3.22s, environment 12.53s, prepare 2.07s)[22m
+
+[34m % [39m[2mCoverage report from [22m[33mv8[39m
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   94.19 |    83.98 |   79.79 |   94.19 |                   
+ src               |   95.09 |       50 |      50 |   95.09 |                   
+  App.tsx          |     100 |      100 |     100 |     100 |                   
+  main.tsx         |       0 |        0 |       0 |       0 | 1-10              
+ ...ts/ActivityLog |   97.16 |    77.77 |     100 |   97.16 |                   
+  ActivityLog.tsx  |   97.16 |    77.77 |     100 |   97.16 | 50-52             
+ ...gisPrivacyCore |   95.53 |     92.3 |   33.33 |   95.53 |                   
+  ...ivacyCore.tsx |   95.53 |     92.3 |   33.33 |   95.53 | 57-64,67-68       
+ ...ComparisonView |   92.79 |    90.12 |   42.85 |   92.79 |                   
+  ...risonView.tsx |   92.79 |    90.12 |   42.85 |   92.79 | ...45-147,332-333 
+ ...tectionSummary |   99.33 |    95.65 |      50 |   99.33 |                   
+  ...onSummary.tsx |   99.33 |    95.65 |      50 |   99.33 | 145               
+ ...nts/FileUpload |   88.88 |     87.5 |   28.57 |   88.88 |                   
+  FileUpload.tsx   |   88.88 |     87.5 |   28.57 |   88.88 | 31-37,46-48       
+ ...ponents/Header |     100 |      100 |     100 |     100 |                   
+  Header.tsx       |     100 |      100 |     100 |     100 |                   
+ ...ighlightedText |      98 |     90.9 |   66.66 |      98 |                   
+  ...ghtedText.tsx |      98 |     90.9 |   66.66 |      98 | 38-39             
+ ...nts/InputPanel |     100 |      100 |     100 |     100 |                   
+  InputPanel.tsx   |     100 |      100 |     100 |     100 |                   
+ ...s/PiiInspector |    98.8 |    91.66 |      50 |    98.8 |                   
+  PiiInspector.tsx |    98.8 |    91.66 |      50 |    98.8 | 93,209            
+ ...ectionTimeline |     100 |      100 |     100 |     100 |                   
+  ...nTimeline.tsx |     100 |      100 |     100 |     100 |                   
+ ...actionControls |   98.92 |    92.85 |   88.88 |   98.92 |                   
+  ...nControls.tsx |   98.92 |    92.85 |   88.88 |   98.92 | 85-86             
+ ...s/SampleLoader |     100 |      100 |     100 |     100 |                   
+  SampleLoader.tsx |     100 |      100 |     100 |     100 |                   
+ src/hooks         |   93.59 |    86.01 |     100 |   93.59 |                   
+  usePiiGuard.ts   |   93.59 |    86.01 |     100 |   93.59 | ...15-818,823-828 
+ src/modules/csv   |   97.51 |    78.26 |     100 |   97.51 |                   
+  csvParser.ts     |   95.23 |    78.12 |     100 |   95.23 | 70-71,81-82       
+  csvSanitizer.ts  |   99.14 |    78.57 |     100 |   99.14 | 56                
+ ...ules/detection |   94.72 |    76.38 |     100 |   94.72 |                   
+  ...arDetector.ts |   92.85 |       50 |     100 |   92.85 | 19-20             
+  ...rdDetector.ts |   94.28 |    66.66 |     100 |   94.28 | 26-27             
+  ...tionEngine.ts |     100 |      100 |     100 |     100 |                   
+  emailDetector.ts |   78.26 |    33.33 |     100 |   78.26 | ...19,22-23,36-37 
+  ipDetector.ts    |   94.11 |    77.77 |     100 |   94.11 | 48-49,62-63       
+  panDetector.ts   |     100 |    66.66 |     100 |     100 | 14                
+  phoneDetector.ts |     100 |    66.66 |     100 |     100 | 16-20             
+ ...ules/redaction |   88.75 |    78.94 |   91.66 |   88.75 |                   
+  fullMask.ts      |     100 |      100 |     100 |     100 |                   
+  partialMask.ts   |   86.41 |    66.66 |     100 |   86.41 | ...58-59,73-74,80 
+  ...nymization.ts |     100 |      100 |     100 |     100 |                   
+  ...tionEngine.ts |   86.55 |    96.15 |      75 |   86.55 | 65-78,116-117     
+ ...modules/sample |     100 |      100 |     100 |     100 |                   
+  sampleData.ts    |     100 |      100 |     100 |     100 |                   
+ ...dules/security |   90.47 |    73.52 |   88.88 |   90.47 |                   
+  privacyGuard.ts  |   90.47 |    73.52 |   88.88 |   90.47 | ...84,132,157-159 
+ ...les/validation |   77.72 |    74.73 |     100 |   77.72 |                   
+  ipValidation.ts  |   71.42 |       70 |     100 |   71.42 | ...31-134,143-144 
+  luhn.ts          |     100 |      100 |     100 |     100 |                   
+  ...Validation.ts |    80.7 |       76 |     100 |    80.7 | 31-32,51-52,70-76 
+ src/types         |     100 |      100 |     100 |     100 |                   
+  pii.ts           |     100 |      100 |     100 |     100 |                   
+-------------------|---------|----------|---------|---------|-------------------
+
+ExitCode: 0
